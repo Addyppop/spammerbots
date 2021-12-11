@@ -2361,14 +2361,14 @@ async def bigspam(e):
             for i in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.respond(msg, reply_to=e.reply_to_msg_id)
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.5)
         elif e.reply_to_msg_id and bitxh.media:  
             counter = int(gladbot[0])
             for i in range(counter):
                 async with e.client.action(e.chat_id, "document"):
                     bitxh = await e.client.send_file(e.chat_id, bitxh, caption=bitxh.text)
                     await ifgif(e, bitxh) 
-                await asyncio.sleep(0.3)  
+                await asyncio.sleep(0.5)  
         elif e.reply_to_msg_id and bitxh.text:
             message = bitxh.text
             counter = int(gladbot[0])
@@ -2378,7 +2378,7 @@ async def bigspam(e):
                         await e.client.send_message(e.chat_id, message)
                     except:
                         pass
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.5)
         else:
             await e.reply(usage)
 
@@ -2465,13 +2465,13 @@ async def uspam(e):
             while x == 0:
                 async with e.client.action(e.chat_id, "typing"):
                     await e.respond(msg, reply_to=e.reply_to_msg_id)
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.5)
         elif e.reply_to_msg_id and bitxh.media:  
             while x == 0:
                 async with e.client.action(e.chat_id, "document"):
                     bitxh = await e.client.send_file(e.chat_id, bitxh, caption=bitxh.text)
                     await ifgif(e, bitxh) 
-                await asyncio.sleep(0.3)  
+                await asyncio.sleep(0.5)  
         elif e.reply_to_msg_id and bitxh.text:
             message = bitxh.text
             while x == 0:
@@ -2480,7 +2480,7 @@ async def uspam(e):
                         await e.client.send_message(e.chat_id, message)
                     except:
                         pass
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.5)
         else:
             await e.reply(usage)
 
@@ -2580,7 +2580,7 @@ async def _(e):
             for xx in docs:
                 async with e.client.action(e.chat_id, "document"):
                     await e.client.send_file(e.chat_id, file=(xx))
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.5)
         except Exception as xy:
             print(str(xy))
             await e.reply(f"**🧿Wʀᴏɴɢ Usᴀɢᴇ🧿**\n\nUsᴇ: ```{hn}help spamcmds``` Tᴏ ᴋɴᴏᴡ ᴜsᴀɢᴇ ᴏғ ᴀʟʟ sᴘᴀᴍ ᴄᴏᴍᴍᴀɴᴅs.")
@@ -2989,7 +2989,7 @@ async def curse(e):
                     caption = f"{username} {reply}"
                     async with e.client.action(e.chat_id, "typing"):
                         await e.client.send_message(e.chat_id, caption)
-                        await asyncio.sleep(0.3)
+                        await asyncio.sleep(0.5)
         else:
             await e.reply(usage)
 
@@ -3113,7 +3113,7 @@ async def curse(e):
                         verse = f"{gladmention} {curmse}"
                         async with e.client.action(e.chat_id, "typing"):
                             await e.client.send_message(e.chat_id, verse)
-                            await asyncio.sleep(0.3)
+                            await asyncio.sleep(0.5)
                 elif demv != 0 or sumdo != 0:
                     await e.reply(f"Your command contains->\n:{emror} Job faliures:\n:{sumdo} {sumdos} Sudo users id:\n:{demv} {demvs} @TeamGladiators crew member's id:\n\n**:Skipping these:**\n\n**Users to assault: {boom}**")
                 else:
@@ -3245,7 +3245,7 @@ async def curse(e):
                         verse = f"{gladmention} {curmse}"
                         async with e.client.action(e.chat_id, "typing"):
                             await e.client.send_message(e.chat_id, verse)
-                            await asyncio.sleep(0.3)
+                            await asyncio.sleep(0.5)
                 elif demv != 0 or sumdo != 0:
                     await e.reply(f"Your command contains->\n:{emror} Job faliures:\n:{sumdo} {sumdos} Sudo users id:\n:{demv} {demvs} @TeamGladiators crew member's id:\n\n**:Skipping these:**\n\n**Users to assault: {boom}**")
                 else:
@@ -3353,7 +3353,7 @@ async def ucurse(e):
                     caption = f"{username} {reply}"
                     async with e.client.action(e.chat_id, "typing"):
                         await e.client.send_message(e.chat_id, caption)
-                        await asyncio.sleep(0.3)
+                        await asyncio.sleep(0.5)
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
@@ -3373,7 +3373,7 @@ async def ucurse(e):
                     caption = f"{username} {reply}"
                     async with e.client.action(e.chat_id, "typing"):
                         await e.client.send_message(e.chat_id, caption)
-                        await asyncio.sleep(0.3)
+                        await asyncio.sleep(0.5)
         else:
             await e.reply(usage)
 
